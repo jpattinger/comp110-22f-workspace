@@ -1,4 +1,4 @@
-"""EX01 - Chardle - A cute step toward Wordle"""
+"""EX01 - Chardle - A cute step toward Wordle."""
 
 __author__ = '730511294'
 
@@ -16,7 +16,7 @@ if len(letter) != 1:
     print("Error: Character must be a single character.")
     exit()
 
-print("Searching for "+ letter + " in " + wordle)
+print("Searching for " + letter + " in " + wordle)
 
 if letter == wordle[0]:
     print(letter + " found at index 0")
