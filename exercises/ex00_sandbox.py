@@ -1,7 +1,12 @@
-print(2+4/2*2)
-print(2**4*2%2)
-print(2/1)
-print(1/2)
-print(1+1)
-print(220>= int(("1"+"1"+"0")*2))
-print(110== int("1"+"1"+"0"))
+from random import randint
+
+question: str = input("what is your yes/no question? ")
+response: int = 0
+
+if response == 0:
+    print("Yes, def")
+else:
+    if response == 1:
+        print("Ask again later")
+    else:
+        print("My sources say no")
