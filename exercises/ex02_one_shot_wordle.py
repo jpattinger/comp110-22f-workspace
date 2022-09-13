@@ -1,16 +1,16 @@
-"""Ex02 - One Shot Wordle"""
+"""Ex02 - One Shot Wordle!"""
 __author__ = '730511294'
 SECRET: str = "python"
-guess: str = input("What is your 6-letter guess? ")
+length: int = len(SECRET)
+guess: str = input(f"What is your {length}-letter guess? ")
 
 i: int = 0
 outcome: str = ""
 WHITE_BOX: str = "\U00002B1C"
 GREEN_BOX: str = "\U0001F7E9"
 YELLOW_BOX: str = "\U0001F7E8"
-
 while len(guess) != len(SECRET):
-    guess = input("That was not 6 letters! Try again: ")
+    guess = input(f"That was not {length} letters! Try again: ")
 
 while i < len(SECRET):
     if guess[i] == SECRET[i]:
@@ -33,12 +33,7 @@ while i < len(SECRET):
     i = i + 1
     """This allows the entire code to run again off the original while loop, as it goes through every index of the word."""
 print(outcome) 
-
-
-
-
 if guess != SECRET:
     print("Not quite. Play again soon!")
-
 if guess == SECRET:
     print("Woo! You got it!")
