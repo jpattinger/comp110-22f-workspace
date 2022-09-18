@@ -1,12 +1,7 @@
-from random import randint
 
-question: str = input("what is your yes/no question? ")
-response: int = 0
 
-if response == 0:
-    print("Yes, def")
-else:
-    if response == 1:
-        print("Ask again later")
-    else:
-        print("My sources say no")
+a: list[str] = ["one"]
+b: list[str] = a
+a.append("two")
+
+print(b[1])
