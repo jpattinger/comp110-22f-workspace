@@ -54,7 +54,6 @@ def test_sub_list_small_list() -> None:
     assert sub(xs, 0, 1) == [1]
 
 
-
 def test_sub_list_list_is_empty() -> None:
     """Edge case that returns an empty list when the start value is greater than the length."""
     xs: list[int] = [1, 2, 3, 4, 5]
