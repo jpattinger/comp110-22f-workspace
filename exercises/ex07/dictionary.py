@@ -2,9 +2,6 @@
 __author__ = '730511294'
 
 
-from matplotlib.backend_bases import key_press_handler
-
-
 def invert(inverted: dict[str, str]) -> dict[str, str]:
     """Given a dictionary, the fucntion inverts the keys and values."""
     answer: dict[str, str] = {}
@@ -16,8 +13,8 @@ def invert(inverted: dict[str, str]) -> dict[str, str]:
     return answer
 
 
-def favorite_colors(a: dict[str, str]) -> str:
-    """GIven a dictionary, will return the value that repeats the most frequently."""
+def favorite_color(a: dict[str, str]) -> str:
+    """Given a dictionary, will return the value that repeats the most frequently."""
     answer: str = ""
     frequency: dict[str, int] = {}
     frequency_1: int = 0
@@ -32,7 +29,9 @@ def favorite_colors(a: dict[str, str]) -> str:
             answer = key
     return answer
 
+
 def count(b: list[str]) -> dict[str, int]:
+    """Counts up how frequently an item shows up in a list."""
     answer: dict[str, int] = dict()
     for key in b:
         if key in answer:
